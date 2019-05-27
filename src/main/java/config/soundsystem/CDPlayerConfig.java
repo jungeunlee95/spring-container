@@ -9,9 +9,11 @@ import org.springframework.context.annotation.Configuration;
 //@ComponentScan(basePackageClasses=Index.class)
 
 @Configuration
-@ComponentScan(basePackages= {"com.cafe24.springcontainer.soundsystem", "com.cafe24.springcontainer.videosystem"})
+@ComponentScan(basePackages= {"com.cafe24.springcontainer.soundsystem", 
+							  "com.cafe24.springcontainer.videosystem"})
 //@ComponentScan(basePackages="com.cafe24.springcontainer.soundsystem")
 public class CDPlayerConfig {
+	
 	
 	
 
