@@ -28,7 +28,7 @@ public class CDPlayer {
 
 	
 	// 와이어링04
-    @Autowired
+   // @Autowired
 	public void insertCompactDisc(@Qualifier("HighSchoolRapper2Final")CompactDisc cd) {
 		this.cd = cd;
 	}
