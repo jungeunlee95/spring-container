@@ -8,6 +8,7 @@ import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -25,6 +26,7 @@ public class CDPlayerJavaConfigTest {
 	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 	
 	@Autowired
+	@Qualifier("HighSchoolRapper2Final")
 	private CompactDisc cd;
 	
 	@Autowired
@@ -44,6 +46,7 @@ public class CDPlayerJavaConfigTest {
 	public void testPlay() {
 		player.play();
 		assertEquals("Playing 지구멸망 by 양승호", systemOutRule.getLog().replace("\r\n", "").replace("\n", ""));
+//		assertEquals("Playing 붕붕 by 김하온", systemOutRule.getLog().replace("\r\n", "").replace("\n", ""));
 	}
 	
 }
